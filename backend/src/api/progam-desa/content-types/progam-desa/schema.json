@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "progam_desas",
+  "info": {
+    "singularName": "progam-desa",
+    "pluralName": "progam-desas",
+    "displayName": "Progam Desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_progdes": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
