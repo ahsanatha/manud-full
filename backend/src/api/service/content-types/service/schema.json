@@ -12,23 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "application_type": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::application-type.application-type",
-      "inversedBy": "services"
-    },
     "applicant": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 60
     },
     "nik": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 16,
+      "minLength": 16
     },
     "email": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 25,
+      "minLength": 13
     },
     "supportingFiles": {
       "type": "media",
@@ -41,6 +40,27 @@
     },
     "applicationNumber": {
       "type": "uid",
+      "required": true,
+      "maxLength": 10
+    },
+    "applicationType": {
+      "type": "enumeration",
+      "enum": [
+        "Layanan Kesehatan",
+        "Perizinan Tutup Jalan",
+        "Perizinan Balai Desa",
+        "Laporan Kehilangan"
+      ],
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Diajukan",
+        "Diproses",
+        "Disetujui",
+        "Selesai"
+      ],
       "required": true
     }
   }

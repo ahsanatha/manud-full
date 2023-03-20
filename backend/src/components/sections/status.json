@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_statuses",
+  "info": {
+    "displayName": "status"
+  },
+  "options": {},
+  "attributes": {
+    "statusName": {
+      "type": "enumeration",
+      "enum": [
+        "Diajukan",
+        "Diproses",
+        "Diterima",
+        "Selesai"
+      ]
+    }
+  }
+}
