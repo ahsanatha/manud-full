@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kebijakans",
+  "info": {
+    "singularName": "kebijakan",
+    "pluralName": "kebijakans",
+    "displayName": "Kebijakan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_kebijakan": {
+      "type": "string"
+    },
+    "input_date": {
+      "type": "date"
+    }
+  }
+}

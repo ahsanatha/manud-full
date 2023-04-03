@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laporan_keuangans",
+  "info": {
+    "singularName": "laporan-keuangan",
+    "pluralName": "laporan-keuangans",
+    "displayName": "Laporan Keuangan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "file_laporan_keuangan": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "tanggal_laporan_keuangan": {
+      "type": "date",
+      "required": true
+    },
+    "jenis_laporan_keuangan": {
+      "type": "enumeration",
+      "enum": [
+        "Bulanan",
+        "Triwulan",
+        "Tahunan"
+      ]
+    }
+  }
+}
